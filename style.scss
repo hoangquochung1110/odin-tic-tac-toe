@@ -1,0 +1,78 @@
+$fontsize: 10px;
+$bgcolor: darkseagreen;
+$fontfamily: 'Fruktur', cursive;
+$darkbluecolor: #3287a8;
+$lightcementcolor: #e0dad1;
+$blackcolor: #171716;
+
+html{ 
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    background-color: $bgcolor;
+}
+
+body{
+    max-width: 60rem;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    height: 3em;
+    font-size: 3em;
+    text-align: center;
+
+    #gamename{
+        color: gold;
+    }
+    #subtext{
+        margin-top: .3em;
+    }
+}
+
+.gameboard {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: $lightcementcolor;
+}
+
+.squares{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: .5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .2em .2em;
+
+    .square{
+        background-color: $darkbluecolor;
+        text-align: center;
+        font-size: 15em;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    #restart-btn{
+        padding: .5em;
+        font-size: 3em;
+        margin: .5em auto;
+        background-color: $darkbluecolor;
+        color: $blackcolor;
+        border-radius: 15px;
+        border: 3px solid $blackcolor;
+    }
+}
+
+.selected{
+    pointer-events: none;
+}

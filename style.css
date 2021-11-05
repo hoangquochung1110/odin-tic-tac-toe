@@ -1,0 +1,70 @@
+html {
+  font-family: "Fruktur", cursive;
+  font-size: 10px;
+  background-color: darkseagreen;
+}
+
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  height: 3em;
+  font-size: 3em;
+  text-align: center;
+}
+header #gamename {
+  color: gold;
+}
+header #subtext {
+  margin-top: 0.3em;
+}
+
+.gameboard {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #e0dad1;
+}
+
+.squares {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.2em 0.2em;
+}
+.squares .square {
+  background-color: #3287a8;
+  text-align: center;
+  font-size: 15em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer #restart-btn {
+  padding: 0.5em;
+  font-size: 3em;
+  margin: 0.5em auto;
+  background-color: #3287a8;
+  color: #171716;
+  border-radius: 15px;
+  border: 3px solid #171716;
+}
+
+.selected {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */
